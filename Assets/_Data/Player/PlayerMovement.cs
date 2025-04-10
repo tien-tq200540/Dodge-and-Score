@@ -13,6 +13,6 @@ public class PlayerMovement : TienMonoBehaviour
     protected virtual void Moving()
     {
         direction = Input.GetAxis("Horizontal");
-        this.transform.parent.Translate(new Vector3(_speed * direction, 0f, 0f) * Time.deltaTime);
+        this.transform.parent.Translate(new Vector3(_speed * direction, 0f, 0f) * Time.fixedDeltaTime);
     }
 }

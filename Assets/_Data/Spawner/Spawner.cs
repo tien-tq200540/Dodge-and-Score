@@ -6,7 +6,7 @@ public class Spawner : TienMonoBehaviour
 {
     [SerializeField] protected List<Transform> prefabs = new();
     [SerializeField] protected List<Transform> poolObjs = new();
-    protected Transform holder;
+    [SerializeField] protected Transform holder;
 
     protected override void LoadComponents()
     {

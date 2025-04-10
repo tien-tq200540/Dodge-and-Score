@@ -16,4 +16,9 @@ public class TienMonoBehaviour : MonoBehaviour
     {
 
     }
+
+    protected virtual void ResetValue()
+    {
+
+    }
 }
