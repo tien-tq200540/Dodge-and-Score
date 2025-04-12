@@ -27,9 +27,10 @@ public class Spawner : TienMonoBehaviour
         Transform newPrefab = this.GetObjFromPool(prefab);
         if (newPrefab == null)
         {
-            newPrefab = Instantiate(prefab, position, Quaternion.identity);
+            newPrefab = Instantiate(prefab);
             newPrefab.name = prefab.name;
         }
+        newPrefab.SetPositionAndRotation(position, Quaternion.identity);
         newPrefab.SetParent(this.holder);
         return newPrefab;
     }
